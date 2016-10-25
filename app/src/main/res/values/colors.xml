@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/cyan</color>
+    <color name="colorPrimaryDark">@color/cyanDark</color>
+    <color name="colorAccent">@color/amber</color>
+
+    <color name="cyan">#00BCD4</color>
+    <color name="cyanDark">#0097A7</color>
+    <color name="amber">#FFC107</color>
+    <color name="dark_gray">#424242</color>
+    <color name="gray">#E0E0E0</color>
+    <color name="black">#000000</color>
+
+</resources>

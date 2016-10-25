@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/space_default"
+        android:paddingBottom="@dimen/space_default"
+        android:paddingRight="@dimen/space_medium"
+        android:paddingLeft="@dimen/space_medium">
+
+        <TextView
+            android:id="@+id/textViewDetailNo"
+            style="@style/TextAppearance.ScubaNote.XLarge.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_default"
+            tools:text="1"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/editTextPlaceWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_default">
+
+            <EditText
+                android:id="@+id/editTextPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/editTextDate"
+                style="@style/EditText.ScubaNote"
+                android:hint="@string/detail_place_hint"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/editTextWrapperDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_default">
+
+            <EditText
+                android:id="@id/editTextDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditText.ScubaNote"
+                android:hint="@string/detail_date_hint"
+                android:inputType="date"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editTextDeptWrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_default">
+
+                <EditText
+                    android:id="@+id/editTextDept"
+                    android:layout_width="@dimen/width_edittext_number"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/editTextMins"
+                    style="@style/EditText.ScubaNote.Number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/editTextDeptWrapper"
+                android:layout_toEndOf="@id/editTextDeptWrapper"
+                android:layout_alignTop="@id/editTextDeptWrapper"
+                android:paddingTop="@dimen/space_top_textview_suffix"
+                android:text="@string/detail_dept_label"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editTextMinsWrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_large_xxx"
+                android:layout_marginStart="@dimen/space_large_xxx"
+                android:layout_marginTop="@dimen/space_default">
+
+                <EditText
+                    android:id="@id/editTextMins"
+                    android:layout_width="@dimen/width_edittext_number"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/editTextStartBar"
+                    style="@style/EditText.ScubaNote.Number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/editTextMinsWrapper"
+                android:layout_toEndOf="@id/editTextMinsWrapper"
+                android:layout_alignTop="@id/editTextMinsWrapper"
+                android:paddingTop="@dimen/space_top_textview_suffix"
+                android:text="@string/detail_mins_label"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editTextStartBarWrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_default">
+
+                <EditText
+                    android:id="@id/editTextStartBar"
+                    android:layout_width="@dimen/width_edittext_number"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/editTextEndBar"
+                    style="@style/EditText.ScubaNote.Number"
+                    android:hint="@string/detail_start_bar_hint"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/editTextStartBarWrapper"
+                android:layout_toEndOf="@id/editTextStartBarWrapper"
+                android:layout_alignTop="@id/editTextStartBarWrapper"
+                android:paddingTop="@dimen/space_top_textview_suffix"
+                android:text="@string/detail_bar_label"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editTextEndBarWrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_large_xxx"
+                android:layout_marginStart="@dimen/space_large_xxx"
+                android:layout_marginTop="@dimen/space_default">
+
+                <EditText
+                    android:id="@id/editTextEndBar"
+                    android:layout_width="@dimen/width_edittext_number"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    style="@style/EditText.ScubaNote.Number"
+                    android:hint="@string/detail_end_bar_hint"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/editTextEndBarWrapper"
+                android:layout_toEndOf="@id/editTextEndBarWrapper"
+                android:layout_alignTop="@id/editTextEndBarWrapper"
+                android:paddingTop="@dimen/space_top_textview_suffix"
+                android:text="@string/detail_bar_label"/>
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroupBoatShore"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_default">
+
+            <RadioButton
+                android:id="@+id/radioButtonBoat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/detail_boat_label"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonShore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_large_xx"
+                android:layout_marginStart="@dimen/space_large_xx"
+                android:text="@string/detail_shore_label"/>
+
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/editTextWrapperComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_default">
+
+            <EditText
+                android:id="@+id/editTextComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditText.ScubaNote"
+                android:hint="@string/detail_comments_hint"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</ScrollView>

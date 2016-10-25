@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ScubaNote</string>
+
+    <string name="main_message_first_dive">Your ScubaNote is empty. Let\'s add your first dive.</string>
+    <string name="main_message_first_dive_title">Add your first dive.</string>
+
+    <string name="addnew_title">New dive</string>
+
+    <string name="detail_place_hint">Place</string>
+    <string name="detail_date_hint">Date</string>
+    <string name="detail_dept_label">m</string>
+    <string name="detail_mins_label">mins</string>
+    <string name="detail_date_depth">Depth</string>
+    <string name="detail_bar_label">bar</string>
+    <string name="detail_start_bar_hint">Start</string>
+    <string name="detail_end_bar_hint">End</string>
+    <string name="detail_boat_label">Boat</string>
+    <string name="detail_shore_label">Shore</string>
+    <string name="detail_comments_hint">Comments</string>
+    <string name="detail_error_blank_input_place">Please enter a place!</string>
+    <string name="detail_error_blank_input_short">!!</string>
+</resources>

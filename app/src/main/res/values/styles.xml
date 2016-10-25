@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="radioButtonStyle">@style/RadioButton</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="TextAppearance.ScubaNote" parent="TextAppearance.AppCompat"/>
+
+    <style name="TextAppearance.ScubaNote.Large" parent="TextAppearance.AppCompat.Large"/>
+
+    <style name="TextAppearance.ScubaNote.XLarge" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/text_large_x</item>
+    </style>
+
+    <style name="TextAppearance.ScubaNote.Small" parent="TextAppearance.AppCompat.Small"/>
+
+    <style name="TextAppearance.ScubaNote.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.ScubaNote.Large.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.ScubaNote.XLarge.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.ScubaNote.Small.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="EditText.ScubaNote" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@drawable/selector_edittext</item>
+        <item name="android:textAppearance">@style/TextAppearance.ScubaNote.Large</item>
+    </style>
+
+    <style name="EditText.ScubaNote.Number">
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">3</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textAppearance">@style/TextAppearance.ScubaNote.Large</item>
+        <item name="android:textColor">@drawable/selector_radiobutton</item>
+    </style>
+
+</resources>
