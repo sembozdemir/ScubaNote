@@ -13,13 +13,12 @@
     <TextView
         android:id="@+id/textViewNo"
         style="@style/TextAppearance.ScubaNote.XLarge.Bold"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/list_item_number_width"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="@dimen/space_large"
-        android:layout_marginStart="@dimen/space_large"
+        android:gravity="center_horizontal"
         tools:text="1"/>
 
     <TextView
@@ -27,8 +26,6 @@
         style="@style/TextAppearance.ScubaNote.Large.Bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/space_large"
-        android:layout_marginStart="@dimen/space_large"
         android:layout_toEndOf="@id/textViewNo"
         android:layout_toRightOf="@id/textViewNo"
         tools:text="Sığacık - Teos Duvar"/>
@@ -39,8 +36,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewName"
-        android:layout_marginLeft="@dimen/space_large"
-        android:layout_marginStart="@dimen/space_large"
         android:layout_marginTop="@dimen/space_small"
         android:layout_toEndOf="@id/textViewNo"
         android:layout_toRightOf="@id/textViewNo"

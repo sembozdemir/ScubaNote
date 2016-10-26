@@ -71,7 +71,7 @@
 
                 <EditText
                     android:id="@+id/editTextDept"
-                    android:layout_width="@dimen/width_edittext_number"
+                    android:layout_width="@dimen/detail_width_edittext_number"
                     android:layout_height="wrap_content"
                     android:imeOptions="actionNext"
                     android:nextFocusForward="@+id/editTextMins"
@@ -98,7 +98,7 @@
 
                 <EditText
                     android:id="@id/editTextMins"
-                    android:layout_width="@dimen/width_edittext_number"
+                    android:layout_width="@dimen/detail_width_edittext_number"
                     android:layout_height="wrap_content"
                     android:imeOptions="actionNext"
                     android:nextFocusForward="@+id/editTextStartBar"
@@ -129,7 +129,7 @@
 
                 <EditText
                     android:id="@id/editTextStartBar"
-                    android:layout_width="@dimen/width_edittext_number"
+                    android:layout_width="@dimen/detail_width_edittext_number"
                     android:layout_height="wrap_content"
                     android:imeOptions="actionNext"
                     android:nextFocusForward="@+id/editTextEndBar"
@@ -157,7 +157,7 @@
 
                 <EditText
                     android:id="@id/editTextEndBar"
-                    android:layout_width="@dimen/width_edittext_number"
+                    android:layout_width="@dimen/detail_width_edittext_number"
                     android:layout_height="wrap_content"
                     android:imeOptions="actionNext"
                     style="@style/EditText.ScubaNote.Number"

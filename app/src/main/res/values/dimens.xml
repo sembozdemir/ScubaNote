@@ -10,6 +10,7 @@
     <dimen name="space_large_xxx">120dp</dimen>
 
     <dimen name="text_large_x">36sp</dimen>
-    <dimen name="width_edittext_number">48dp</dimen>
+    <dimen name="detail_width_edittext_number">48dp</dimen>
     <dimen name="space_top_textview_suffix">32dp</dimen>
+    <dimen name="list_item_number_width">96dp</dimen>
 </resources>
